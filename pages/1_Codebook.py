@@ -8,6 +8,10 @@ from pydantic import BaseModel
 st.title("Codebook")
 
 
+if "prompt_saved" not in st.session_state:
+    st.write("Please set your system prompt first.")
+    exit()
+
 if not st.session_state["prompt_saved"]:
     st.write("Please set your system prompt first.")
     exit()
