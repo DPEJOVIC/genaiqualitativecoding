@@ -1,4 +1,4 @@
-streamlit==1.39.0
-openai==1.53.0
-pydantic==2.9.2
-pydantic_core==2.23.4
+streamlit
+openai
+pydantic
+pydantic_core
