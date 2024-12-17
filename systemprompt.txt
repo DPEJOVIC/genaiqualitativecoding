@@ -1,3 +1,3 @@
-Please give me a codebook detailing relevant "codewords" found within the data, definitions or explanations for each code you identify, and an example of an answer from the data that is illustrative of the code it belongs to.
+Please give me a codebook detailing relevant "codes" or "codewords" found within the data, definitions or explanations for each code you identify, and an example of an answer from the data that is illustrative of the code it belongs to. Each code should ideally be a single word or phrase that represents responses in the data.
 
-Each codeword should be also be assigned a theme, which groups related codes together under more generally.
+Each codeword should be also be assigned a theme, which groups related codes together. There should not be as many themes as there are codes! Themes are umbrellas; one theme should apply to more than one code.
