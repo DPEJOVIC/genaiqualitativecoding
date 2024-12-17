@@ -12,7 +12,7 @@ if "prompt_saved" not in st.session_state:
 
 
 if st.session_state["prompt_saved"]:
-    st.write("Instructions saved.")
+    st.write("Instructions saved. Please upload your data in the File Upload tab.")
     st.write("\nIf you wish to start again, please reload this webpage.")
     exit()
 

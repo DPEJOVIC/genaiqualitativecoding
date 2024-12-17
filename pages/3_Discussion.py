@@ -15,6 +15,14 @@ if not st.session_state["prompt_saved"]:
     st.write("Please set your system prompt first.")
     exit()
 
+if "file_uploaded" not in st.session_state:
+    st.write("Please upload your data first.")
+    exit()
+
+if not st.session_state["file_uploaded"]:
+    st.write("Please upload your data first.")
+    exit()
+
 if "codebook" not in st.session_state:
     st.write("Please visit the 'Codebook' tab first.")
     exit()
