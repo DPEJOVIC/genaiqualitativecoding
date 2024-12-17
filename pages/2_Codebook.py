@@ -52,7 +52,8 @@ survey_data = st.session_state["survey_data"]
 # JSON schema for the chatbot's response to adhere to
 class Codebook(BaseModel):
     themes: list[str]
-    theme_definitions: list[str]
+    codes: list[str]
+    code_definitions: list[str]
     example_responses: list[str]
 
 
@@ -85,12 +86,14 @@ if "codebook" not in st.session_state:
 
 def display_codebook(codebook):
     themes = codebook.themes
-    theme_definitions = codebook.theme_definitions
+    codes = codebook.codes
+    code_definitions = codebook.code_definitions
     example_responses = codebook.example_responses
 
     codebook_df = pd.DataFrame({
         "Themes": themes,
-        "Theme Definitions": theme_definitions,
+        "Codes": codes,
+        "Code Definitions": code_definitions,
         "Example Responses": example_responses,
     })
 

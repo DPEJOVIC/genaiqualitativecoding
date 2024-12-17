@@ -51,7 +51,8 @@ client = setup()
 # JSON schema for the chatbot's response to adhere to
 class Codebook(BaseModel):
     themes: list[str]
-    theme_definitions: list[str]
+    codes: list[str]
+    code_definitions: list[str]
     example_responses: list[str]
 
 
