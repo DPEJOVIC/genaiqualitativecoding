@@ -37,7 +37,7 @@ def file_uploaded():
 
 
 if uploaded_file:
-    st.button("Done", on_click=file_uploaded)
+    st.button("Done", on_click=file_uploaded, use_container_width=True)
     
 
 
