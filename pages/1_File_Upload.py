@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.title("File Upload")
+
 if "prompt_saved" not in st.session_state:
     st.write("Please set your system prompt first.")
     exit()
@@ -12,6 +14,9 @@ if not st.session_state["prompt_saved"]:
 if "file_uploaded" not in st.session_state:
     st.session_state["file_uploaded"] = False
 
+if st.session_state["file_uploaded"]:
+    st.write("Please proceed to the Codebook window.")
+    exit()
 
 ### FILE UPLOAD LOGIC ###
 st.write("""Upload your data here. Ensure data is in .csv format. Upload your file and press 'Done' to process them.""")
@@ -29,7 +34,7 @@ def file_uploaded():
         
     
         st.session_state["file_uploaded"] = True
-        
+
 
 if uploaded_file:
     st.button("Done", on_click=file_uploaded)
