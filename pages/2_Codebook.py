@@ -46,7 +46,7 @@ client = setup()
 
 
 # Read the survey data and convert to json
-survey_data = pd.read_csv("sample_data_csv.csv").to_json()
+survey_data = st.session_state["survey_data"]
 
 
 # JSON schema for the chatbot's response to adhere to
