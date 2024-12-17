@@ -29,6 +29,10 @@ def file_uploaded():
         
     
         st.session_state["file_uploaded"] = True
+        
+
+if uploaded_file:
+    st.button("Done", on_click=file_uploaded)
     
 
 
